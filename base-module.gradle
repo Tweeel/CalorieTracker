@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.devtools.ksp'
 apply plugin: 'kotlin-parcelize'
 
 android {
-    namespace 'com.plcoding.calorytracker'
+    namespace 'com.example.calorytracker'
     compileSdk ProjectConfig.compileSdk
 
     defaultConfig {
@@ -34,7 +34,7 @@ android {
 }
 
 dependencies {
-    kapt DaggerHilt.hiltCompiler
+    ksp DaggerHilt.hiltCompiler
     implementation DaggerHilt.hiltAndroid
 
     testImplementation Testing.junit4

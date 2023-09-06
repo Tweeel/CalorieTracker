@@ -11,7 +11,7 @@ dependencies {
     "implementation"(Retrofit.okHttpLoggingInterceptor)
     "implementation"(Retrofit.moshiConverter)
 
-    "kapt"(Room.roomCompiler)
+    "ksp"(Room.roomCompiler)
     "implementation"(Room.roomKtx)
     "implementation"(Room.roomRuntime)
 }

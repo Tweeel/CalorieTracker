@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.plcoding.calorytracker"
+    namespace = "com.example.calorytracker"
     compileSdk = ProjectConfig.compileSdk
 
     defaultConfig {
@@ -54,6 +54,7 @@ dependencies {
     implementation(Compose.uiToolingPreview)
     implementation(Compose.hiltNavigationCompose)
     implementation(Compose.material)
+    implementation(Compose.material3)
     implementation(Compose.runtime)
     implementation(Compose.navigation)
     implementation(Compose.viewModelCompose)
@@ -63,6 +64,7 @@ dependencies {
     kapt(DaggerHilt.hiltCompiler)
 
     implementation(project(Modules.core))
+    implementation(project(Modules.coreUi))
     implementation(project(Modules.onboardingPresentation))
     implementation(project(Modules.onboardingDomain))
     implementation(project(Modules.trackerPresentation))
