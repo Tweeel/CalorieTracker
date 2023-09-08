@@ -13,10 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
+import com.example.core.commun.Constants
 import com.example.core.navigation.Route
 import com.example.core.util.UiEvent
 import com.example.core_ui.LocalSpacing
-import com.example.onboarding_presentation.commun.Constants
 import com.example.onboarding_presentation.components.ActionButton
 
 @Composable

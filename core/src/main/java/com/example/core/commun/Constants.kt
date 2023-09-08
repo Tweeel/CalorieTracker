@@ -1,4 +1,4 @@
-package com.example.onboarding_presentation.commun
+package com.example.core.commun
 
 object Constants {
     const val app_name = "CalorieTracker"
