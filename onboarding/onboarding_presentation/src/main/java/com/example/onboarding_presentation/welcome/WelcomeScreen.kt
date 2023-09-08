@@ -40,8 +40,8 @@ fun WelcomeScreen(
         ActionButton(
             text = Constants.next,
             onClick = {
-                onNavigate(UiEvent.Navigate(route = Route.AGE))
-                      },
+                onNavigate(UiEvent.Navigate(route = Route.GENDER))
+            },
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
     }
