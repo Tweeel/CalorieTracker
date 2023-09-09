@@ -14,7 +14,7 @@
         android:theme="@style/Theme.CalorieTracker"
         tools:targetApi="31">
         <activity
-            android:name="com.example.calorietracker.MainActivity"
+            android:name="com.example.calorieTracker.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CalorieTracker">

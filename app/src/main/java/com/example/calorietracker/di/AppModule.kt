@@ -32,4 +32,10 @@ class AppModule {
         return DefaultPreferences(sharedPreferences)
     }
 
+//    @Provides
+//    @Singleton
+//    fun provideFilterOutDigits(): FilterOutDigits {
+//        return FilterOutDigits()
+//    }
+
 }
