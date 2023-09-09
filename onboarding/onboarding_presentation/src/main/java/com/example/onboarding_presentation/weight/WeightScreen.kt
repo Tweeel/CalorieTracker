@@ -1,4 +1,4 @@
-package com.example.onboarding_presentation.age
+package com.example.onboarding_presentation.weight
 
 import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
@@ -23,10 +23,10 @@ import com.example.onboarding_presentation.components.ActionButton
 import com.example.onboarding_presentation.components.UnitTextField
 
 @Composable
-fun AgeScreen(
+fun WeightScreen(
     scaffoldState: SnackbarHostState,
     onNavigate: (UiEvent.Navigate) -> Unit,
-    viewModel: AgeViewModel = hiltViewModel()
+    viewModel: WeightViewModel = hiltViewModel()
 ) {
     val spacing = LocalSpacing.current
     LaunchedEffect(key1 = true) {
@@ -42,7 +42,7 @@ fun AgeScreen(
             }
         }
     }
-    Log.d("test", viewModel.age)
+    Log.d("test", viewModel.weight)
 
     Box(
         modifier = Modifier
@@ -56,15 +56,15 @@ fun AgeScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = Constants.whats_your_age,
+                text = Constants.whats_your_weight,
                 style = MaterialTheme.typography.displaySmall,
                 textAlign = TextAlign.Center
             )
             Spacer(modifier = Modifier.padding(spacing.spaceMedium))
             UnitTextField(
-                value = viewModel.age,
-                onValueChange = viewModel::onAgeChange,
-                unit = Constants.years
+                value = viewModel.weight,
+                onValueChange = viewModel::onWeightChange,
+                unit = Constants.kg
             )
         }
 
