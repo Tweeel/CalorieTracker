@@ -64,7 +64,7 @@ fun GoalScreen(
                     color = DarkGreen,
                     selectedTextColor = Color.White,
                     onClick = {
-                        viewModel.onGloadTypeClick(GoalType.LoseWeight)
+                        viewModel.onGoalTypeClick(GoalType.LoseWeight)
                     },
                     textStyle = MaterialTheme.typography.labelLarge.copy(
                         fontWeight = FontWeight.Normal
@@ -78,7 +78,7 @@ fun GoalScreen(
                     color = DarkGreen,
                     selectedTextColor = Color.White,
                     onClick = {
-                        viewModel.onGloadTypeClick(GoalType.KeepWeight)
+                        viewModel.onGoalTypeClick(GoalType.KeepWeight)
                     },
                     textStyle = MaterialTheme.typography.labelLarge.copy(
                         fontWeight = FontWeight.Normal
@@ -92,7 +92,7 @@ fun GoalScreen(
                     color = DarkGreen,
                     selectedTextColor = Color.White,
                     onClick = {
-                        viewModel.onGloadTypeClick(GoalType.GainWeight)
+                        viewModel.onGoalTypeClick(GoalType.GainWeight)
                     },
                     textStyle = MaterialTheme.typography.labelLarge.copy(
                         fontWeight = FontWeight.Normal

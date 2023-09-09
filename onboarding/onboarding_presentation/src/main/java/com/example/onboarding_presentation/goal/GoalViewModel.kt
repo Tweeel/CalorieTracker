@@ -25,7 +25,7 @@ class GoalViewModel @Inject constructor(
     private val _uiEvent = Channel<UiEvent>()
     val uiEvent = _uiEvent.receiveAsFlow()
 
-    fun onGloadTypeClick(goalType: GoalType) {
+    fun onGoalTypeClick(goalType: GoalType) {
         selectedGoalType = goalType
     }
 

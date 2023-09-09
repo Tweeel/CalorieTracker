@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.core.commun.Constants
 import com.example.core.domain.preferences.Preferences
-import com.example.core.domain.useCase.FilterOutDigits
+import com.example.core.domain.useCase.FilterOutDigitsUseCase
 import com.example.core.navigation.Route
 import com.example.core.util.UiEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -19,7 +19,7 @@ import javax.inject.Inject
 @HiltViewModel
 class WeightViewModel @Inject constructor(
     private val preferences: Preferences,
-    private val filterOutDigits: FilterOutDigits,
+    private val filterOutDigitsUseCase: FilterOutDigitsUseCase,
 ): ViewModel() {
 
     var weight by mutableStateOf("80")
@@ -30,7 +30,7 @@ class WeightViewModel @Inject constructor(
 
     fun onWeightChange(weight: String) {
         if(weight.length <= 3) {
-            this.weight = filterOutDigits(weight)
+            this.weight = filterOutDigitsUseCase(weight)
         }
     }
 
