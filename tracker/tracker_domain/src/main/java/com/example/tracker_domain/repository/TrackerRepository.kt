@@ -18,7 +18,7 @@ interface TrackerRepository {
         food: TrackedFood
     )
 
-    suspend fun deleteTrackedfood(
+    suspend fun deleteTrackedFood(
         food: TrackedFood
     )
 
