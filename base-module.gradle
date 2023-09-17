@@ -4,7 +4,7 @@ apply plugin: 'com.google.devtools.ksp'
 apply plugin: 'kotlin-parcelize'
 
 android {
-    namespace 'com.example.calorytracker'
+    namespace 'com.example.calorietracker'
     compileSdk ProjectConfig.compileSdk
 
     defaultConfig {
