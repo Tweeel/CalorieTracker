@@ -19,7 +19,7 @@ import androidx.core.view.WindowCompat
 import com.example.core_ui.Dimensions
 import com.example.core_ui.LocalSpacing
 
-private val DarkColorScheme = darkColorScheme(
+private val darkColorScheme = darkColorScheme(
     primary = BrightGreen,
     inversePrimary = DarkGreen,
     secondary = Orange,
@@ -31,7 +31,7 @@ private val DarkColorScheme = darkColorScheme(
     onSecondary = Color.White,
 )
 
-private val LightColorScheme = lightColorScheme(
+private val lightColorScheme = lightColorScheme(
     primary = BrightGreen,
     inversePrimary = DarkGreen,
     secondary = Orange,
@@ -56,8 +56,8 @@ fun CalorieTrackerTheme(
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
 
-        darkTheme -> DarkColorScheme
-        else -> LightColorScheme
+        darkTheme -> darkColorScheme
+        else -> lightColorScheme
     }
 
     val view = LocalView.current
